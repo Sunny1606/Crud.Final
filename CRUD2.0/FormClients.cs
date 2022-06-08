@@ -18,8 +18,7 @@ namespace CRUD2._0
         {
             InitializeComponent();
         }     
-        public Clients ClienteSeleccion { get; set; }
-       
+        public Clients ClienteSeleccion { get; set; }       
         private void buttCancel_Click(object sender, EventArgs e)
         {
             this.Close();
