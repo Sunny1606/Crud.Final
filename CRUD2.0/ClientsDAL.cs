@@ -80,7 +80,7 @@ namespace CRUD2._0
             using (SqlConnection connection = ConexionSql.ObtenerConexion())
             {
                 SqlCommand command = new SqlCommand(string.Format("Update ContactsDONNE set Name='{0}', LastName='{1}', Treatment='{2}', Phone='{3}' where Id= '{4}'",
-                   pClient.Id, pClient.Name, pClient.LastName, pClient.Treatment, pClient.Phone, pClient.Id), connection);
+                    pClient.Name, pClient.LastName, pClient.Treatment, pClient.Phone, pClient.Id), connection);
 
                 retorno = command.ExecuteNonQuery();
                 connection.Close();
